@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.10">
   <diagram name="Página-1" id="OILRFIr8J_ASrDXMIVmO">
-    <mxGraphModel dx="2377" dy="1238" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#141414)" math="0" shadow="0">
+    <mxGraphModel dx="1678" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#141414)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,7 +46,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="twtk0csrtK7OeHxIXJjS-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" value="No" vertex="1">
-          <mxGeometry height="40" width="55" x="452.5" y="330" as="geometry" />
+          <mxGeometry height="40" width="55" x="472.5" y="330" as="geometry" />
         </mxCell>
         <mxCell id="twtk0csrtK7OeHxIXJjS-22" parent="1" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fillColor=light-dark(#FFFFFF,#FF2643);" value="Error / Stop" vertex="1">
           <mxGeometry height="80" width="80" x="442.5" y="560" as="geometry" />
