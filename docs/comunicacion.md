@@ -26,17 +26,17 @@ En estas 2 imagenes se evidencia el canal de comunicacion WHATSAPP, y se aprecia
 <img width="429" height="519" alt="image" src="https://github.com/user-attachments/assets/ca1216a3-7c03-4749-a4b8-ffd06b9537f6" />
 
 
-<img width="317" height="367" alt="image" src="https://github.com/user-attachments/assets/7e5bd1c4-5e3f-44ae-8551-c12e26fbe093" />
+<img width="317" height="367" alt="image" src="https://github.com/user-attachments/assets/7e5bd1c4-5e3f-44ae-8551-c12e26fbe093" />  
 
 
 -------------------------------------------------------------------------------------------------------------------------
-FASE 01 DEL PROYECTO DNSDE
+FASE 01 DEL PROYECTO DNSDE  
 
-Evidencia del diagrama de flujo hecho en Draw.io
-<img width="488" height="218" alt="image" src="https://github.com/user-attachments/assets/9a3d213a-7c6c-45bf-8771-f0fa6cb8296d" />
+Evidencia del diagrama de flujo hecho en Draw.io  
+<img width="488" height="218" alt="image" src="https://github.com/user-attachments/assets/9a3d213a-7c6c-45bf-8771-f0fa6cb8296d" />  
 
-<img width="874" height="281" alt="image" src="https://github.com/user-attachments/assets/94471fac-c3b5-4e64-a5d1-e7de0b77304c" />
+<img width="874" height="281" alt="image" src="https://github.com/user-attachments/assets/94471fac-c3b5-4e64-a5d1-e7de0b77304c" />    
 
-BRANCHES MODEL
+BRANCHES MODEL  
 <img width="239" height="237" alt="image" src="https://github.com/user-attachments/assets/02d45383-f071-43dd-9492-0cbfd751aca0" />
 
