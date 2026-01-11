@@ -3,7 +3,7 @@ name: CD Pipeline
 on:
  push:
   branches: [ "main" ]
-   #$workflow_dispatch:   # Permite ejecución manual
+   $workflow_dispatch: Permite ejecución manual
 
 jobs:
   deploy:
