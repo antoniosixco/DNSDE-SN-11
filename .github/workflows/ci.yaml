@@ -1,43 +1,72 @@
-name: CI Pipeline
+name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [main, develop]
   pull_request:
-    branches: [ "main" ]
+    branches: [main, develop]
 
-permissions:
-  contents: read
-  
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Checkout código
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Use the secret
-        run: |
-         echo "Usando el secreto en un comando (valor enmascarado):"
-          echo ${{ secrets.API_TOKEN }}
-        env:
-        # Asigna el secreto de GitHub a una variable de entorno local del paso
-          MY_ENV_VAR: ${{ secrets.API_TOKEN }}
-
-      - name: Run_script_with_env_var
-          run:
-            echo "La variable de entorno es: $MY_ENV_VAR"
-        # Aquí puedes usar $MY_ENV_VAR en tus scripts o herramientas
-
-      - name: Configurar Python.py
-        uses: actions/setup-python@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
+          node-version: 18
+          cache: npm
 
-      - name: Instalar dependencias
+      - name: Install dependencies
         run: npm install
 
-      - name: Ejecutar pruebas
+      - name: Run tests
         run: npm test
 
+
+
+#name: CI Pipeline
+
+#on:
+  #push:
+   # branches: [ "main" ]
+  #pull_request:
+   # branches: [ "main" ]
+
+#permissions:
+ # contents: read
+  
+#jobs:
+ # build:
+  #  runs-on: ubuntu-latest
+    
+   # steps:
+    #  - name: Checkout código
+     #   uses: actions/checkout@v4
+
+      #- name: Use the secret
+       # run: |
+        # echo "Usando el secreto en un comando (valor enmascarado):"
+         # echo ${{ secrets.API_TOKEN }}
+        #env:
+        # Asigna el secreto de GitHub a una variable de entorno local del paso
+         # MY_ENV_VAR: ${{ secrets.API_TOKEN }}
+
+      #- name: Run_script_with_env_var
+       #   run:
+        #    echo "La variable de entorno es: $MY_ENV_VAR"
+        # Aquí puedes usar $MY_ENV_VAR en tus scripts o herramientas
+
+      #- name: Configurar Python.py
+       # uses: actions/setup-python@v4
+        #with:
+         # python-version: '3.11'
+
+      #- name: Instalar dependencias
+       # run: npm install
+
+      #- name: Ejecutar pruebas
+       # run: npm test
