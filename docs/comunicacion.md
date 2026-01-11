@@ -1,18 +1,25 @@
 CANAL OFICIAL DEL EQUIPO SN-11  
+
 whatsApp   
 https://chat.whatsapp.com/Jsg67nrzOBL1Ss6O9gwBys
 
+Canal oficial de comunicación
+El canal principal de comunicación es whatsapp debido a la facilidad de comunicarse ya sea por mensaje de texto, llamada o videollamada, 
+también la aplicación permite el enlaces o documentos asociados al proyecto. El horario decidido para reuniones es todos los días de 9 pm en adelante, 
+para poder dar tiempo de revisión del trabajo hecho o avanzar y hacer cualquier modificación o mejora que sea necesaria en cuanto al proyecto y reporte. 
 
 HORARIOS DE RESPUESTA  
-Tarde y noche
-Horarios entre las 5:00 PM a 9:00 PM
+Noche
+Horarios entre las 9:00 PM en delante
 
 
 NORMAS MINIMAS DE COMUNICACION  
-1- Responder a los llamados  
-2- Expresar ideas u opiniones claras y directas  
-3- Ser empaticos por situaciones laborales con distintos horarios.  
-4- Confirmar entendimiento de las explicaciones o al momento de leer instrucciones.  
+1- Mantener el repesto.  
+2- Responder a los mensajes, llamadas o videosllamadas.  
+3- Confirmar la lectura de los mensajes.  
+4- Expresar ideas u opiniones claras y directas.  
+5- Ser empaticos por situaciones laborales con distintos horarios.  
+6- Confirmar entendimiento de las explicaciones o al momento de leer instrucciones.  
 
 
 EVIDENCIAS DE LA FASE CERO
@@ -29,8 +36,15 @@ En estas 2 imagenes se evidencia el canal de comunicacion WHATSAPP, y se aprecia
 <img width="317" height="367" alt="image" src="https://github.com/user-attachments/assets/7e5bd1c4-5e3f-44ae-8551-c12e26fbe093" />  
 
 
+
+
 -------------------------------------------------------------------------------------------------------------------------
 FASE 01 DEL PROYECTO DNSDE  
+
+Nota: Enla fase 1 de este proyecto hubieron muchos inconvenientes el cual se reorganizo y reasignaron resposablidades extras a cada integrante debido a que, 
+uno de los integrantes desistió por motivos personales.
+
+
 
 Evidencia del diagrama de flujo hecho en Draw.io  
 <img width="488" height="218" alt="image" src="https://github.com/user-attachments/assets/9a3d213a-7c6c-45bf-8771-f0fa6cb8296d" />  
