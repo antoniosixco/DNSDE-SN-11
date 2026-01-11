@@ -1,1 +1,15 @@
+services:
+  - type: web
+    name: app-js
+    env: node
+    region: oregon
+    plan: free
+    branch: main
+
+    buildCommand: npm install
+    startCommand: node index.js
+
+    envVars:
+      - key: NODE_ENV
+        value: production
 

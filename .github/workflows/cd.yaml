@@ -1,38 +1,72 @@
-name: CD Pipeline
+#name: CD Pipeline
+
+#<<<<<<< hotfix
+#on:
+ #push:
+  #branches: [ "main" ]
+   #$workflow_dispatch: Permite ejecución manual
+#=======
+#on:
+ #push:
+  #branches: [ "main" ]
+   #$workflow_dispatch:   # Permite ejecución manual
+#>>>>>>> main
+
+#jobs:
+ # deploy:
+  #  runs-on: ubuntu-latest
+   # steps:
+    #  - name: Checkout código
+     #   uses: actions/checkout@v4
+
+      #- name: Configurar Docker
+       # run: |
+        #  docker build -t mi-app:latest .
+         # docker save mi-app:latest | gzip > mi-app.tar.gz
+
+      #- name: Copiar imagen al servidor
+       # uses: appleboy/scp-action@v0.1.7
+        #with:
+         # host: ${{ secrets.SERVER_HOST }}
+          #username: ${{ secrets.SERVER_USER }}
+          #key: ${{ secrets.SERVER_SSH_KEY }}
+          #source: "mi-app.tar.gz"
+          #target: "~/deploy/"
+
+      #- name: Ejecutar despliegue remoto
+       # uses: appleboy/ssh-action@v0.1.7
+        #with:
+         # host: ${{ secrets.SERVER_HOST }}
+          #username: ${{ secrets.SERVER_USER }}
+          #key: ${{ secrets.SERVER_SSH_KEY }}
+          #script: |
+           # docker load < ~/deploy/mi-app.tar.gz
+            #docker run -d -p 80:80 mi-app:latest
+
+name: CD #Node.js AWS EC2
 
 on:
- push:
-  branches: [ "main" ]
-   $workflow_dispatch: Permite ejecución manual
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout código
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configurar Docker
-        run: |
-          docker build -t mi-app:latest .
-          docker save mi-app:latest | gzip > mi-app.tar.gz
-
-      - name: Copiar imagen al servidor
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy por SSH
+        uses: appleboy/ssh-action@v1.0.0
         with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          source: "mi-app.tar.gz"
-          target: "~/deploy/"
-
-      - name: Ejecutar despliegue remoto
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_KEY }}
           script: |
-            docker load < ~/deploy/mi-app.tar.gz
-            #docker run -d -p 80:80 mi-app:latest
-
+            cd /var/www/app
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart app
