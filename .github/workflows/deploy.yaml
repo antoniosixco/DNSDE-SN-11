@@ -1,1 +1,18 @@
+name: Deploy Producción
 
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy
+        run: |
+          echo "Deploy versión $GITHUB_REF"
+          ./deploy.sh
