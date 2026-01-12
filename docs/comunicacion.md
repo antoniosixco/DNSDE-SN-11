@@ -45,6 +45,8 @@ Nota: Enla fase 1 de este proyecto hubieron muchos inconvenientes el cual se reo
 uno de los integrantes desistió por motivos personales.
 
 
+DOCUMENTO DE TRABAJO EN LINEA, TERMINACION DE FACE 0 Y FASE 1  
+LINK: https://docs.google.com/document/d/1D6XQQ4WJRswI2XPvbc5X8MvuSsM175EkthPrCWRDLj8/edit?tab=t.0  
 
 Evidencia del diagrama de flujo hecho en Draw.io  
 <img width="488" height="218" alt="image" src="https://github.com/user-attachments/assets/9a3d213a-7c6c-45bf-8771-f0fa6cb8296d" />  
@@ -52,5 +54,11 @@ Evidencia del diagrama de flujo hecho en Draw.io
 <img width="874" height="281" alt="image" src="https://github.com/user-attachments/assets/94471fac-c3b5-4e64-a5d1-e7de0b77304c" />    
 
 BRANCHES MODEL  
-<img width="239" height="237" alt="image" src="https://github.com/user-attachments/assets/02d45383-f071-43dd-9492-0cbfd751aca0" />
+<img width="239" height="237" alt="image" src="https://github.com/user-attachments/assets/02d45383-f071-43dd-9492-0cbfd751aca0" />  
+
+
+EL HOSTING SELECIONADO ES RENDER  
+https://dnsde-sn-11.onrender.com  
+<img width="812" height="406" alt="image" src="https://github.com/user-attachments/assets/8a23b3db-c48e-4274-832d-e4156a3db3ba" />  
+
 
