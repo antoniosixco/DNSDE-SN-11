@@ -26,3 +26,6 @@ jobs:
 
       - name: Lint / Test (placeholder)
         run: echo "CI OK"
+
+      - name: Ejecutar Pruebas (Jest) 
+        run: npm test
