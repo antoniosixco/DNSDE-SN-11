@@ -1,21 +1,15 @@
-# Imagen base
 FROM node:18-alpine
 
-# Directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copiar dependencias
 COPY package*.json ./
+RUN npm ci --only=production
 
-# Instalar dependencias (solo producción)
-RUN npm install --production
+COPY src ./src
 
-# Copiar el resto del código
-COPY . .
+ENV NODE_ENV=production
+ENV PORT=3000
 
-# Puerto expuesto (ajústalo si es diferente)
 EXPOSE 3000
 
-# Comando para iniciar la app
-CMD ["node", "index.js"]
-
+CMD ["npm", "start"]
