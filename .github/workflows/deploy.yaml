@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: productiona
+    environment: production
 
     steps:
       - name: Desplegar en Render
