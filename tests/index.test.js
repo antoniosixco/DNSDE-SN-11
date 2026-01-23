@@ -4,10 +4,10 @@ const app = require("../src/server");
 describe("API Endpoints", () => {
   // ✅ Prueba que PASA
   test("GET / debe responder correctamente", async () => {
-    const res = await request(app).get("/");
-    expect(res.statusCode).toBe(200);
-    expect(res.text).toBe("API Node.js funcionando 🚀");
-  });
+  const res = await request(app).get("/");
+  expect(res.statusCode).toBe(200);
+  expect(res.text).toBe("App Node.js en producción 🚀");
+});
 
   // ✅ Prueba que PASA
   test("GET /health debe responder estado ok", async () => {
