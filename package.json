@@ -2,7 +2,7 @@
   "name": "dnsde-sn-11",
   "version": "1.0.0",
   "description": "API simple en Node.js con ESLint y Jest",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "engines": {
     "node": ">=18"
   },
