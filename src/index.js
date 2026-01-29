@@ -1,12 +1,16 @@
 const express = require("express");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("App Node.js en producción 🚀");
+  res.status(200).send("App Node.js en producción 🚀");
 });
 
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en puerto ${PORT}`);
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    uptime: process.uptime()
+  });
 });
+
+module.exports = app;
