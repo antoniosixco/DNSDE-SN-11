@@ -6,17 +6,27 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "echo \"No tests yet\""
+    "test": "echo \"No tests yet\"",
+    "lint": "eslint src"
   },
   "dependencies": {
     "express": "^4.19.2"
   },
   "devDependencies": {
+    "eslint": "^9.39.2",
     "nodemon": "^3.0.3"
   },
   "engines": {
     "node": ">=18"
+  },
+  "jest": {
+  "coverageThreshold": {
+    "global": {
+      "branches": 80,
+      "functions": 80,
+      "lines": 80
+    }
+  }
   }
 
 }
-
