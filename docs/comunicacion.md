@@ -222,6 +222,11 @@ jobs:
             
             <img width="921" height="521" alt="image" src="https://github.com/user-attachments/assets/462838d2-79f2-4cee-b322-b2db6188e8f7" />
 
+EVIDENCIA DE ARCHIVO PRT
+CAPTURA TOMADA DESDE vScODE
+
+<img width="921" height="601" alt="image" src="https://github.com/user-attachments/assets/b38a0c80-0c7c-4c31-a6f3-9e8e60318c53" />
+
 
 
 
