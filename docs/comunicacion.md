@@ -63,169 +63,31 @@ exportacion de DIAGRAMA DRAW.IO A PNG Y AGREGADO A GITHUB
 https://app.diagrams.net/?src=about#Hantoniosixco%2FDNSDE-SN-11%2Fmain%2Fdocs%2FDiagrama.drawio#%7B%22pageId%22%3A%22OILRFIr8J_ASrDXMIVmO%22%7D 
 
 
-
-
-
-
-npm install
-Luego sube ambos archivos:
-git add package.json package-lock.json
-git commit -m "Sync dependencies for CI"
-git push origin main
-
-haciendo GIT PULL Y GIT PUSH hacia la rama principal
-
-
-CI Advanced Code
-
-name: CI Advanced
-
-
-on:
-  push:
-    branches: [ main, dev ]
-  pull_request:
-
-
-permissions:
-  contents: read
-
-
-jobs:
-  ci:
-    name: Full CI Pipeline
-    runs-on: ubuntu-latest
-
-
-    strategy:
-      matrix:
-        node-version: [18, 20]
-
-
-    steps:
-      - uses: actions/checkout@v4
-
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: npm
-
-
-      - name: Install dependencies
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 10
-          max_attempts: 3
-          command: npm ci
-
-
-      - name: Lint
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 5
-          max_attempts: 2
-          command: npm run lint
-
-
-      - name: Run tests with coverage (retry)
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 10
-          max_attempts: 3
-          command: npm test -- --coverage
-
-
-      - name: Upload coverage report
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-node-${{ matrix.node-version }}
-          path: coverage/
-
-
-      - name: Security audit
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 5
-          max_attempts: 2
-          command: npm audit --audit-level=high
-
-
-
-Configuración de CI se realiza en Visual Studio Cod.
-
-
-
-CD, despliegue continuo
-name: CD Production Deploy
-
-
-on:
-  push:
-    branches: [ main ]
-
-
-jobs:
-  deploy:
-    name: Deploy to Production
-    runs-on: ubuntu-latest
-
-
-    steps:
-      - uses: actions/checkout@v4
-
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-
-      - name: Install dependencies
-        run: npm ci
-
-
-      - name: Build project
-        run: npm run build
-
-
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          script: |
-            cd /var/www/app
-            git pull origin main
-            npm ci
-            npm run build
-            pm2 restart app || pm2 start npm --name "app" -- start  
-
-            <img width="426" height="407" alt="image" src="https://github.com/user-attachments/assets/485c55ef-a54e-412a-bd5c-26cae0265d22" />  
+<img width="426" height="407" alt="image" src="https://github.com/user-attachments/assets/485c55ef-a54e-412a-bd5c-26cae0265d22" />  
 
             
-            <img width="426" height="407" alt="image" src="https://github.com/user-attachments/assets/c5940f68-da5e-457e-942d-c711c6dead61" />
+<img width="426" height="407" alt="image" src="https://github.com/user-attachments/assets/c5940f68-da5e-457e-942d-c711c6dead61" />
 
-            <img width="442" height="214" alt="image" src="https://github.com/user-attachments/assets/f17ee162-3c18-45a8-862d-4c6b878dcd28" />  
+<img width="442" height="214" alt="image" src="https://github.com/user-attachments/assets/f17ee162-3c18-45a8-862d-4c6b878dcd28" />  
 
-            <img width="443" height="293" alt="image" src="https://github.com/user-attachments/assets/fdb1bf30-e341-4016-bc0f-eb5f4f9b3972" />  
+<img width="443" height="293" alt="image" src="https://github.com/user-attachments/assets/fdb1bf30-e341-4016-bc0f-eb5f4f9b3972" />  
 
-            <img width="440" height="419" alt="image" src="https://github.com/user-attachments/assets/8ea33082-9bd1-42b6-abc7-e1a2179dac2c" />  
+<img width="440" height="419" alt="image" src="https://github.com/user-attachments/assets/8ea33082-9bd1-42b6-abc7-e1a2179dac2c" />  
 
-            <img width="921" height="588" alt="image" src="https://github.com/user-attachments/assets/654292f4-ea1c-45ca-aaa6-e5d81f0ecb6c" />  
+<img width="921" height="588" alt="image" src="https://github.com/user-attachments/assets/654292f4-ea1c-45ca-aaa6-e5d81f0ecb6c" />  
 
-            <img width="921" height="588" alt="image" src="https://github.com/user-attachments/assets/baba60e4-a3cb-4c7e-83b1-2e3e854b1f9b" />  
+<img width="921" height="588" alt="image" src="https://github.com/user-attachments/assets/baba60e4-a3cb-4c7e-83b1-2e3e854b1f9b" />  
 
             
-            <img width="921" height="521" alt="image" src="https://github.com/user-attachments/assets/462838d2-79f2-4cee-b322-b2db6188e8f7" />
+<img width="921" height="521" alt="image" src="https://github.com/user-attachments/assets/462838d2-79f2-4cee-b322-b2db6188e8f7" />
 
 EVIDENCIA DE ARCHIVO PRT
 CAPTURA TOMADA DESDE vScODE
 
 <img width="921" height="601" alt="image" src="https://github.com/user-attachments/assets/b38a0c80-0c7c-4c31-a6f3-9e8e60318c53" />
+
+<img width="921" height="634" alt="image" src="https://github.com/user-attachments/assets/4d74bfe1-72cd-4303-9b31-2f174e240882" /> 
+
 
 
 
