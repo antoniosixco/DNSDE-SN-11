@@ -1,22 +1,26 @@
-name: CD
+name: CI-Tests
 
 on:
   push:
-    branch: main
+    branches: [ "main", "test-fail" ] # Aquí le decimos que vigile ambas ramas
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
-    environment: production
 
     steps:
-      - name: Trigger Render Deploy
-        
-        run: |
-          if [ -z "${{ secrets.RENDER_DEPLOY_HOOK }}" ]; then
-          echo "❌ Secret NOT set"
-          exit 1
-          else
-          echo "✅ Secret is set"
-          fi
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
 
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Tests
+        run: npm test 
