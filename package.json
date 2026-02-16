@@ -1,6 +1,7 @@
 {
   "name": "dnsde-sn-11",
   "version": "1.0.0",
+  "type": "module",
   "description": "Node.js app en producción con Render",
   "main": "src/index.js",
   "scripts": {
