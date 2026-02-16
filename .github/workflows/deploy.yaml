@@ -1,45 +1,28 @@
-name: CD Production Deploy
+name: CI-Tests
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - test-fail
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  deploy:
-    name: Deploy to Production
+  test:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          script: |
-            cd /var/www/app
-            git pull origin main
-            npm ci
-            npm run build
-            pm2 restart app || pm2 start npm --name "app" -- start
-
-      - name: Verify Deployment
-        run: |
-          echo "Esperando 30 segundos a que la app inicie en el servidor..."
-          sleep 30
-          echo "Verificando respuesta 200 OK..."
-          curl -f https://dnsde-sn-11-s9w4.onrender.com/health || (echo "La app no responde" && exit 1)  
+      - name: Run Tests
+        run: npm test

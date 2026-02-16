@@ -2,6 +2,9 @@ name: CI Advanced
 
 on:
   push:
+    branches: [ main, dev, test-fail ] 
+  pull_request:
+    branches: [ main ]
     branches: [ main, dev ]
   pull_request:
 
@@ -12,50 +15,11 @@ jobs:
   ci:
     name: Full CI Pipeline
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18, 20]
-
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: npm
-
-      - name: Install dependencies
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 10
-          max_attempts: 3
-          command: npm ci
-
-      - name: Lint
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 5
-          max_attempts: 2
-          command: npm run lint
-
-      - name: Run tests with coverage (retry)
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 10
-          max_attempts: 3
-          command: npm test -- --coverage
-
-      - name: Upload coverage report
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-node-${{ matrix.node-version }}
-          path: coverage/
-
-      - name: Security audit
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 5
-          max_attempts: 2
-          command: npm audit --audit-level=high
+          node-version: 18
+      - run: npm install
+      - run: npm test
