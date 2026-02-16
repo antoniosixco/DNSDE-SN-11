@@ -1,13 +1,19 @@
-name: CI
+name: CI Advanced
 
 on:
   push:
     branches: [ main, dev, test-fail ] 
   pull_request:
     branches: [ main ]
+    branches: [ main, dev ]
+  pull_request:
+
+permissions:
+  contents: read
 
 jobs:
-  build:
+  ci:
+    name: Full CI Pipeline
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

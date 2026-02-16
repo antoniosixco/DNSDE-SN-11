@@ -2,15 +2,24 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.status(200).send("App Rota 💀");
+  res.status(200).send("App Node.js en producción - Demo de video final");
 });
 
-// Endpoint mejorado para la monitorización
+// --- ESTE ES EL HEALTH CHECK OBLIGATORIO ---
 app.get("/health", (req, res) => {
   res.status(200).json({
-    status: 'UP',               // Cambiado de "ok" a "UP" (estándar de industria)
-    timestamp: new Date().toISOString(), // Añadido formato ISO
-    uptime: process.uptime()    // Segundos que el proceso lleva activo
+    status: "UP",
+    uptime: process.uptime(),
+    timestamp: new Date().toISOString()
   });
 });
 
+// Configuración del puerto para Render
+if (require.main === module) {
+    const port = process.env.PORT || 3000;
+    app.listen(port, '0.0.0.0', () => {
+        console.log(`Server running on port ${port}`);
+    });
+}
+
+module.exports = app;

@@ -49,8 +49,83 @@ uno de los integrantes desistió por motivos personales.
 Evidencia del diagrama de flujo hecho en Draw.io  
 <img width="488" height="218" alt="image" src="https://github.com/user-attachments/assets/9a3d213a-7c6c-45bf-8771-f0fa6cb8296d" />  
 
-<img width="874" height="281" alt="image" src="https://github.com/user-attachments/assets/94471fac-c3b5-4e64-a5d1-e7de0b77304c" />    
+<img width="874" height="281" alt="image" src="https://github.com/user-attachments/assets/94471fac-c3b5-4e64-a5d1-e7de0b77304c" />  
 
 BRANCHES MODEL  
 <img width="239" height="237" alt="image" src="https://github.com/user-attachments/assets/02d45383-f071-43dd-9492-0cbfd751aca0" />
+
+
+
+
+---------------------------------------------------------------------------------------------------------------  
+DOCUEMENTACION DE LA FASE 2 DEL PRO  
+exportacion de DIAGRAMA DRAW.IO A PNG Y AGREGADO A GITHUB  
+https://app.diagrams.net/?src=about#Hantoniosixco%2FDNSDE-SN-11%2Fmain%2Fdocs%2FDiagrama.drawio#%7B%22pageId%22%3A%22OILRFIr8J_ASrDXMIVmO%22%7D 
+
+
+<img width="426" height="407" alt="image" src="https://github.com/user-attachments/assets/485c55ef-a54e-412a-bd5c-26cae0265d22" />  
+
+            
+<img width="426" height="407" alt="image" src="https://github.com/user-attachments/assets/c5940f68-da5e-457e-942d-c711c6dead61" />
+
+<img width="442" height="214" alt="image" src="https://github.com/user-attachments/assets/f17ee162-3c18-45a8-862d-4c6b878dcd28" />  
+
+<img width="443" height="293" alt="image" src="https://github.com/user-attachments/assets/fdb1bf30-e341-4016-bc0f-eb5f4f9b3972" />  
+
+<img width="440" height="419" alt="image" src="https://github.com/user-attachments/assets/8ea33082-9bd1-42b6-abc7-e1a2179dac2c" />  
+
+<img width="921" height="588" alt="image" src="https://github.com/user-attachments/assets/654292f4-ea1c-45ca-aaa6-e5d81f0ecb6c" />  
+
+<img width="921" height="588" alt="image" src="https://github.com/user-attachments/assets/baba60e4-a3cb-4c7e-83b1-2e3e854b1f9b" />  
+
+            
+<img width="921" height="521" alt="image" src="https://github.com/user-attachments/assets/462838d2-79f2-4cee-b322-b2db6188e8f7" />
+
+EVIDENCIA DE ARCHIVO PRT
+CAPTURA TOMADA DESDE vScODE
+
+<img width="921" height="601" alt="image" src="https://github.com/user-attachments/assets/b38a0c80-0c7c-4c31-a6f3-9e8e60318c53" />
+
+<img width="921" height="634" alt="image" src="https://github.com/user-attachments/assets/4d74bfe1-72cd-4303-9b31-2f174e240882" /> 
+
+
+------------------------------------------------------------------------------------------  
+PARTE DE DOCUEMNTACION DE FASE 3 ENTREGABLE
+
+
+
+VERIFICACION DE DEPLOY AGREGADO AL CD. YAML 
+
+<img width="872" height="410" alt="image" src="https://github.com/user-attachments/assets/69cc8ac6-2d13-468c-aa62-f2e054a53f82" />  
+
+VERIFICACION DE QUE EN ARCHIVO .GITIGNORE ESTA MODULES  
+<img width="444" height="238" alt="image" src="https://github.com/user-attachments/assets/2dd62b41-9d88-42d9-9cde-2090eb3da0bf" />  
+
+PARTE DE LA FALTA DE SINCRONIZACION LOCAL CON LA WEB MAS LA SOLUCION PARA ESTAR AL DIA
+
+  <img width="443" height="182" alt="image" src="https://github.com/user-attachments/assets/1edd81b9-ab6e-4ab9-b67d-6af19634ad40" />  
+
+  <img width="446" height="124" alt="image" src="https://github.com/user-attachments/assets/f2aa6ac9-d88f-40c4-84fc-4d6f85598762" />  
+
+  <img width="494" height="217" alt="image" src="https://github.com/user-attachments/assets/99efc4a1-8862-4fc8-a011-116d351620a1" />  
+
+  <img width="445" height="257" alt="image" src="https://github.com/user-attachments/assets/9370d60f-ac01-40c7-9196-6e50c45b3bb5" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
