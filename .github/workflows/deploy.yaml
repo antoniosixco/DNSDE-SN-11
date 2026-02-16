@@ -36,3 +36,10 @@ jobs:
             npm ci
             npm run build
             pm2 restart app || pm2 start npm --name "app" -- start
+
+      - name: Verify Deployment
+        run: |
+          echo "Esperando 30 segundos a que la app inicie en el servidor..."
+          sleep 30
+          echo "Verificando respuesta 200 OK..."
+          curl -f https://dnsde-sn-11-s9w4.onrender.com/health || (echo "La app no responde" && exit 1)  
