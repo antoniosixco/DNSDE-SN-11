@@ -89,6 +89,34 @@ CAPTURA TOMADA DESDE vScODE
 <img width="921" height="634" alt="image" src="https://github.com/user-attachments/assets/4d74bfe1-72cd-4303-9b31-2f174e240882" /> 
 
 
+------------------------------------------------------------------------------------------  
+PARTE DE DOCUEMNTACION DE FASE 3 ENTREGABLE
+
+
+
+VERIFICACION DE DEPLOY AGREGADO AL CD. YAML 
+
+<img width="872" height="410" alt="image" src="https://github.com/user-attachments/assets/69cc8ac6-2d13-468c-aa62-f2e054a53f82" />  
+
+VERIFICACION DE QUE EN ARCHIVO .GITIGNORE ESTA MODULES  
+<img width="444" height="238" alt="image" src="https://github.com/user-attachments/assets/2dd62b41-9d88-42d9-9cde-2090eb3da0bf" />  
+
+PARTE DE LA FALTA DE SINCRONIZACION LOCAL CON LA WEB MAS LA SOLUCION PARA ESTAR AL DIA
+
+  <img width="443" height="182" alt="image" src="https://github.com/user-attachments/assets/1edd81b9-ab6e-4ab9-b67d-6af19634ad40" />  
+
+  <img width="446" height="124" alt="image" src="https://github.com/user-attachments/assets/f2aa6ac9-d88f-40c4-84fc-4d6f85598762" />  
+
+  <img width="494" height="217" alt="image" src="https://github.com/user-attachments/assets/99efc4a1-8862-4fc8-a011-116d351620a1" />  
+
+  <img width="445" height="257" alt="image" src="https://github.com/user-attachments/assets/9370d60f-ac01-40c7-9196-6e50c45b3bb5" />
+
+
+
+
+
+
+
 
 
 
