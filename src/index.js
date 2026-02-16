@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.status(200).send("App Node.js en producción - Fase 3 Activa 🚀");
+  res.status(200).send("App Node.js en producción - Demo de video final");
 });
 
 // --- ESTE ES EL HEALTH CHECK OBLIGATORIO ---
