@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.status(200).send("Prueba de webhook");
+  res.status(200).send("nueva prueba");
 });
 
 // --- ESTE ES EL HEALTH CHECK OBLIGATORIO ---
