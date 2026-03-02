@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.status(200).send("Esta app ha sido destruida(Test-fail) 💀");
+  res.status(200).send("Prueba de webhook");
 });
 
 // --- ESTE ES EL HEALTH CHECK OBLIGATORIO ---
