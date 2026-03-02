@@ -2,13 +2,12 @@
   "name": "dnsde-sn-11",
   "version": "1.0.0",
   "description": "Node.js app en producción con Render",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "lint": "eslint src",
-    "test": "jest --coverage",
-    "type": "module"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "express": "^4.19.2"
