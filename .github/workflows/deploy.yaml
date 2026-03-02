@@ -1,4 +1,4 @@
-name: CI-Tests
+name: CI-Tests and Deploy
 
 on:
   push:
@@ -26,3 +26,13 @@ jobs:
 
       - name: Run Tests
         run: npm test
+
+  deploy:
+    name: Deploy to Render
+    needs: test # CRÍTICO: Solo despliega si el job "test" fue exitoso
+    runs-on: ubuntu-latest
+    # Solo despliega cuando los cambios llegan a la rama principal (main)
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - name: Trigger Render Deployment
+        run: curl "${{ secrets.RENDER_DEPLOY_HOOK }}"
