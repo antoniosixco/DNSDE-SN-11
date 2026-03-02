@@ -1,4 +1,5 @@
-const app = require("./index");
+/* eslint-env node */
+const app = require('./index');
 
 const PORT = process.env.PORT || 3000;
 
