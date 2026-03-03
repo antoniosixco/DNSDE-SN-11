@@ -4,7 +4,7 @@ const app = express();
 
 // Ruta principal de producción
 app.get('/', (req, res) => {
-  res.status(200).send('API Grupo SN-11 - Entorno de Produccion Activo');
+  res.status(200).send('API Grupo SN-11 - prueba1');
 });
 
 // --- ESTE ES EL HEALTH CHECK OBLIGATORIO ---
