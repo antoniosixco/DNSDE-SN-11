@@ -4,7 +4,7 @@ const app = express();
 
 // Ruta principal de producción
 app.get('/', (req, res) => {
-  res.status(200).send('API Grupo SN-11 - Despliegue Exitoso');
+  res.status(200).send('API Grupo SN-11 - Despliegue test para video');
 });
 
 // --- ESTE ES EL HEALTH CHECK OBLIGATORIO ---
