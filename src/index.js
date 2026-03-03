@@ -4,7 +4,7 @@ const app = express();
 
 // Ruta principal de producción
 app.get('/', (req, res) => {
-  res.status(200).send('SN-11 Video prueba');
+  res.status(200).send('SN-Grupo11-Demostracion final exitosa');
 });
 
 // --- ESTE ES EL HEALTH CHECK OBLIGATORIO ---
