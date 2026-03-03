@@ -11,7 +11,7 @@ describe("API Endpoints", () => {
   test("GET / debe responder correctamente", async () => {
   const res = await request(app).get("/");
   expect(res.statusCode).toBe(200);
-  expect(res.text).toBe("API Grupo SN-11 - Entorno de Produccion Activo");
+  expect(res.text).toBe("API Grupo SN-11 - Prueba para video");
 });
 
   // ✅ Prueba 2 (Ajustada al nuevo estándar)
