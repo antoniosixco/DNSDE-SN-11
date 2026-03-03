@@ -11,7 +11,7 @@ describe("API Endpoints", () => {
   test("GET / debe responder correctamente", async () => {
   const res = await request(app).get("/");
   expect(res.statusCode).toBe(200);
-  expect(res.text).toBe("SN-11 Video prueba");
+  expect(res.text).toBe("SN-Grupo11-Demostracion final exitosa");
 });
 
   // ✅ Prueba 2 (Ajustada al nuevo estándar)
